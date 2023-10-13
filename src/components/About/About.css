@@ -1,21 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
 .para {
   /* font-family: "Poppins", sans-serif; */
-  font-size: x-large;
+  font-size: larger;
   text-align: center;
-  line-height: 160%;
-  padding-left: 3%;
-  padding-right: 3%;
+  line-height: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
+  line-height: normal;
 }
 
 .about {
   background-color: #fce9fe;
   border-top: 2px solid #f39dc9;
   border-bottom: 2px solid #f39dc9;
+  padding-right: 4%;
 }
 
 .about_main {
-  font-size: 45px;
+  font-size: 30px;
   text-align: center;
   font-family: "Poppins", sans-serif;
 }
@@ -23,22 +25,7 @@
   color: #eb64a9;
 }
 
-.para: {
-  animation: fadeInAnimation ease 3s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-}
-
-@keyframes fadeInAnimation {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@media (min-width: 600px) {
+@media (min-width: 1000px) {
   .about_main {
     font-size: 50px;
     text-align: center;
@@ -48,7 +35,7 @@
   .para {
     /* font-family: "Poppins", sans-serif; */
     font-size: x-large;
-    line-height: 300%;
+    line-height: 150%;
     text-align: center;
     padding-left: 15%;
     padding-right: 15%;

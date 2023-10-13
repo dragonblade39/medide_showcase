@@ -1,51 +1,34 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+
 .impact_main {
   text-align: center;
   font-family: "Poppins", sans-serif;
-  font-size: 50px;
+  font-size: 40px;
 }
+
 .below_text {
   text-align: center;
-  font-size: 35px;
+  font-size: 20px;
 }
+
 .pinky2 {
   color: #eb64a9;
 }
-.email_link {
-  color: black;
-}
-.impact_image1 {
-  margin-left: 5%;
-  width: 372px;
-  height: 310px;
+
+.card {
+  margin-left: 6.5%;
+  margin-right: 5%;
+  padding-right: 5%;
+  padding-left: 5%;
 }
 
-.impact_image1:hover {
-  margin-left: 5%;
-  width: 420px;
-  height: 350px;
-}
-
-.impact_image2 {
-  width: 438px;
-  height: 300px;
-}
-
-.impact_image2:hover {
-  width: 584px;
-  height: 400px;
-}
-
+.impact_image1,
+.impact_image2,
 .impact_image3 {
-  margin-left: 2px;
-  width: 408px;
+  width: 300px;
   height: 300px;
-}
-
-.impact_image3:hover {
-  margin-left: 2px;
-  width: 544px;
-  height: 400px;
+  border-radius: 100%;
+  border: 2px solid #eb64a9;
 }
 
 .impact_headings {
@@ -64,30 +47,310 @@
 .impact_content {
   text-align: center;
   font-size: 20px;
-  padding-left: 10%;
-  padding-right: 10%;
+  /* padding-left: 10%;
+  padding-right: 10%; */
 }
 
-@media (min-width: 600px) {
+.card {
+  border: none;
+  justify-content: center;
+}
+
+@media (min-width: 1000px) {
   .impact_main {
-    font-size: 70px;
+    font-size: 60px;
   }
+
   .below_text {
-    font-size: 50px;
+    font-size: 30px;
   }
-  .impact_image1 {
-    margin-left: 18%;
+
+  .circle {
+    margin-left: 13%;
   }
-  .impact1 {
-    margin-left: -10%;
+
+  .impact_image1 {}
+
+  .impact_image2 {}
+
+  .impact_image3 {}
+}
+
+
+
+
+
+
+
+@font-face {
+  font-family: "revicons";
+  fallback: fallback;
+  src: url("../../../node_modules/react-multi-carousel/lib/revicons.woff") format('woff'), url("../../../node_modules/react-multi-carousel/lib/revicons.ttf") format('ttf'), url("../../../node_modules/react-multi-carousel/lib/revicons.eot") format('ttf')
+}
+
+.react-multi-carousel-list {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative
+}
+
+.react-multi-carousel-track {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  will-change: transform, transition
+}
+
+.react-multiple-carousel__arrow {
+  position: absolute;
+  outline: 0;
+  transition: all .5s;
+  border-radius: 35px;
+  z-index: 1000;
+  border: 0;
+  background: transparent;
+  min-width: 43px;
+  min-height: 43px;
+  opacity: 1;
+  cursor: pointer
+}
+
+.react-multiple-carousel__arrow:hover {
+  background: #fff;
+}
+
+.react-multiple-carousel__arrow::before {
+  font-size: 120px;
+  color: #ec6bae;
+  display: block;
+  font-family: revicons;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+  margin-right: -80px;
+  margin-top: -120px;
+}
+
+.react-multiple-carousel__arrow--right::before {
+  font-size: 120px;
+  color: #ec6bae;
+  display: block;
+  font-family: revicons;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+  margin-right: -80px;
+  margin-top: -120px;
+}
+
+.react-multiple-carousel__arrow::hover,
+.react-multiple-carousel__arrow:active {
+  font-size: 120px;
+  color: #ed1283;
+  display: block;
+  font-family: revicons;
+  text-align: center;
+  z-index: 2;
+  position: relative
+}
+
+.react-multiple-carousel__arrow:disabled {
+  cursor: default;
+  background: #ec6bae;
+}
+
+.react-multiple-carousel__arrow--left {
+  left: calc(4% + 1px);
+}
+
+.react-multiple-carousel__arrow--left::before {
+
+  font-size: 120px;
+  color: #ec6bae;
+  display: block;
+  font-family: revicons;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+  margin-right: -80px;
+  margin-top: -120px;
+}
+
+.react-multiple-carousel__arrow--right {
+  right: calc(4% + 1px)
+}
+
+.react-multiple-carousel__arrow--right::before {
+  content: "\e825"
+}
+
+.react-multi-carousel-dot-list {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  left: 0;
+  right: 0;
+  justify-content: center;
+  margin: auto;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center
+}
+
+.react-multi-carousel-dot button {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  opacity: 1;
+  padding: 5px 5px 5px 5px;
+  box-shadow: none;
+  transition: background .5s;
+  border-width: 2px;
+  border-style: solid;
+  border-color: grey;
+  padding: 0;
+  margin: 0;
+  margin-right: 6px;
+  outline: 0;
+  cursor: pointer
+}
+
+.react-multi-carousel-dot button:hover:active {
+  background-color: #ed1283;
+}
+
+.react-multi-carousel-dot--active button {
+  background-color: #ed1283;
+}
+
+.react-multi-carousel-item {
+  transform-style: preserve-3d;
+  backface-visibility: hidden
+}
+
+@media all and (-ms-high-contrast:none),
+(-ms-high-contrast:active) {
+  .react-multi-carousel-item {
+    flex-shrink: 0 !important
   }
-  .impact_image2 {
-    margin-left: 12%;
+
+  .react-multi-carousel-track {
+    overflow: visible !important
   }
-  .impact_image3 {
-    margin-left: 15%;
+}
+
+[dir='rtl'].react-multi-carousel-list {
+  direction: rtl
+}
+
+.rtl.react-multiple-carousel__arrow--right {
+  right: auto;
+  left: calc(4% + 1px)
+}
+
+
+
+.rtl.react-multiple-carousel__arrow--left {
+  left: auto;
+  right: calc(4% + 1px)
+}
+
+
+.react-multiple-carousel__arrow--left,
+.react-multiple-carousel__arrow--right {
+  position: absolute;
+  outline: 0;
+  transition: all .5s;
+  border-radius: 35px;
+  z-index: 1000;
+  border: 0;
+  background: transparent;
+  min-width: 43px;
+  min-height: 43px;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.react-multiple-carousel__arrow--left:hover,
+.react-multiple-carousel__arrow--right:hover {
+  background: #fff;
+}
+
+.react-multiple-carousel__arrow--left::before,
+.react-multiple-carousel__arrow--right::before {
+  font-size: 120px;
+  color: #ec6bae;
+  display: block;
+  font-family: revicons;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+  margin-right: -80px;
+  margin-top: -120px;
+}
+
+.react-multiple-carousel__arrow--left:disabled,
+.react-multiple-carousel__arrow--right:disabled {
+  cursor: default;
+
+}
+
+.react-multiple-carousel__arrow--left {
+  left: calc(4% + 1px);
+  background-color: #ec6bae;
+  position: absolute;
+  outline: 0;
+  transition: all .5s;
+  border-radius: 35px;
+  z-index: 1000;
+  border: 0;
+  background: transparent;
+  min-width: 43px;
+  min-height: 43px;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.react-multiple-carousel__arrow--left::before {
+  content: "\e825";
+  transform: rotate(180deg);
+  margin-left: -130px;
+}
+
+.react-multiple-carousel__arrow--right::before {
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 500px) {
+
+
+  .react-multiple-carousel__arrow--left::before,
+  .react-multiple-carousel__arrow--right::before {
+    font-size: 80px !important;
+    color: #ec6bae;
+    display: block;
+    font-family: revicons;
+    text-align: center;
+    z-index: 2;
+    position: relative;
   }
-  .impact3 {
-    margin-right: -13.5%;
+
+  .react-multiple-carousel__arrow--left::before {
+    margin-left: -110px;
+    margin-bottom: 100px;
   }
+
+  .react-multiple-carousel__arrow--right::before {
+    margin-right: -30px;
+    margin-bottom: 115px;
+  }
+
 }
