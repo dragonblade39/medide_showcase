@@ -281,7 +281,7 @@
 
 .react-multiple-carousel__arrow--left:hover,
 .react-multiple-carousel__arrow--right:hover {
-  background: #fff;
+  background: transparent;
 }
 
 .react-multiple-carousel__arrow--left::before,
