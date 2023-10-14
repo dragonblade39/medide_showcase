@@ -56,6 +56,49 @@
   justify-content: center;
 }
 
+@media screen and (max-width:450px) {
+  .circle {
+    margin-left: 0.4%;
+    margin-top: 7.5%;
+  }
+
+  .prob {
+    margin-top: 7%;
+  }
+
+  .prob1 {
+    margin-top: 8%;
+  }
+
+  .impact_image1,
+  .impact_image2,
+  .impact_image3 {
+    width: 275px;
+    height: 275px;
+    border-radius: 100%;
+    border: 2px solid #eb64a9;
+  }
+
+}
+
+@media screen and (max-width:500px) {
+  .circle {
+    margin-left: 0.4%;
+    margin-top: 7.5%;
+  }
+
+  .impact_image1,
+  .impact_image2,
+  .impact_image3 {
+    width: 275px;
+    height: 275px;
+    border-radius: 100%;
+    border: 2px solid #eb64a9;
+  }
+
+}
+
+
 @media (min-width: 1000px) {
   .impact_main {
     font-size: 60px;
@@ -323,10 +366,11 @@
   content: "\e825";
   transform: rotate(180deg);
   margin-left: -130px;
+  margin-bottom: 70px;
 }
 
 .react-multiple-carousel__arrow--right::before {
-  margin-bottom: 10px;
+  margin-bottom: 70px;
 }
 
 @media screen and (max-width: 500px) {
@@ -345,12 +389,12 @@
 
   .react-multiple-carousel__arrow--left::before {
     margin-left: -110px;
-    margin-bottom: 100px;
+    margin-bottom: 130px;
   }
 
   .react-multiple-carousel__arrow--right::before {
     margin-right: -30px;
-    margin-bottom: 115px;
+    margin-bottom: 140px;
   }
 
 }

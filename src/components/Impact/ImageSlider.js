@@ -33,15 +33,15 @@ function ImageSlider() {
           <div class="col">
             <br />
             <span class="circle">
-              <img className="impact_image1 " src={Image1} alt="#"></img>
+              <img className="impact_image1 prob1" src={Image1} alt="#"></img>
             </span>
             <br />
             <br />
             <br />
-            <h1 className="impact_headings">
+            <h1 className="impact_headings ">
               Dicover Medical Services Near You
             </h1>
-            <p className="impact_content">
+            <p className="impact_content ">
               Medide brings you a seamless way to find diagnostic center,blood
               banks, specialty hospitals and counselling centers within 50km of
               your current location.
@@ -86,7 +86,7 @@ function ImageSlider() {
           <div class="col">
             <br />
             <span class="circle">
-              <img className="impact_image1" src={Image1} alt="#"></img>
+              <img className="impact_image1 prob" src={Image1} alt="#"></img>
             </span>
             <br />
             <br />
